@@ -16,4 +16,4 @@ mybatis:
     type-aliases-package: com.hongke.file.excel.dao
 
 tablename: mapping_info
-filepath: D:\2_work_for_own\projects-open\easyexcel-header-export-by-comments\file\
+filepath: D:\2_work_for\projects-open\easyexcel-header-export-by-comments\file\
