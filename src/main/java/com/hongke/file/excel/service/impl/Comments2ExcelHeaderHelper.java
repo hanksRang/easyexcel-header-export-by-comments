@@ -41,7 +41,6 @@ public class Comments2ExcelHeaderHelper {
             Map<String, String> map = tableDao.queryTable(ta);
             log.info("map: " + map);
             List<Map<String, String>> mapList = tableDao.queryColumns(ta);
-            // log.info("mapList: " + ));
             List<String> cols = new ArrayList<>();
             mapList.stream().map(x -> x.get("columnComment")).forEach(x -> cols.add(x));
             EasyExcel.write(filePath + ta + ".xlsx").head(getHead(cols)).sheet("模板").doWrite((Collection<?>) null);
